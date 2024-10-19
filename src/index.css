@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Añadir estilos para el texto "Hello there," */
+.hello-text {
+  font-size: 1.5rem;
+  color: #10B981; /* Color verde de Tailwind */
+  font-weight: 600;
+  transform: rotate(-10deg);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
